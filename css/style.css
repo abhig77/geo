@@ -1,0 +1,246 @@
+body{
+    margin: auto;
+}
+/* navigation bar styling */
+.nav-wrapper{
+    background-color: #00b300;
+    width: 100%;
+    padding: 5px;
+    top: 0;
+    position: sticky;
+    z-index: 1;
+}
+
+.nav-link{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    padding: 0;
+    align-items: stretch;
+    justify-content: space-around;
+    color: white;
+}
+
+.nav-link li{
+    display: inline;
+    margin: 0px;
+}
+
+.nav-link li a{
+    text-decoration: none;
+    color: white;
+    padding: 22px;
+}
+
+.nav-link li a:hover{
+background-color: darkorange;
+}
+
+.nav-link li a:active{
+    background-color: chartreuse;
+}
+
+/* .nav-link li a:visited{
+    background-color: darkviolet;
+} */
+
+.nav-item{
+    color: aliceblue;
+}
+
+/* Form portion of webpage */
+
+#form-container{
+    background-color: #323232;
+    width: 330px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: fixed;
+    bottom: -280;
+    right: 0;
+    transition: .5s;
+}
+
+#form-container:hover{
+    bottom: 0;s
+}
+
+#mail-icon{
+    width: 30px;
+    float: left;
+    padding-right: 15px;
+}
+
+#form-head-container{
+    background-color: #000000;
+    padding: 2px;
+    padding-left: 8px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 1px;
+}
+
+#form-head-container p{
+    color: white;
+    
+}
+
+.form-item{
+    color: white;
+    margin-left: 15px;
+    padding-left: 8px;
+}
+
+#subject{
+    height: 100px;
+    width: 200px;
+}
+
+#submit{
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    padding: 7px 12px;
+    margin: 9px 18px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#submit:hover{
+    background-color: darkorange;
+    cursor: pointer;
+}
+
+/* caption of background image */
+
+#caption-1{
+    position: absolute;
+    color: white;
+    left: 25%;
+    top: 45%;
+    font-size: 4vw;
+    animation-name: caption-fade;
+    animation-duration: 2s;
+}
+
+@keyframes caption-fade {
+    0%{opacity: 0; top: 0;}
+    100%{opacity: 1; top: 40%;}
+    
+}
+
+/* body stylling */
+
+#popular-cap{
+    padding-top: 25px;
+    text-align: center;
+}
+
+.featured-wrapper{
+    position: relative;
+    overflow: auto;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 100px;
+    padding-top: 30px;
+}
+
+.product-container{
+    position: relative;
+    text-align: center;
+    background-color: #4caf50;
+    border-style:solid ;
+    border-radius: 20px;
+    border-width: 5px;
+    border-color: #4caf50;
+    margin-top: 8px;
+    max-width: 20%;
+    animation-name: product-anim;
+    animation-duration: 3s;
+}
+
+    @keyframes product-anim {
+    0%{opacity: 0; margin-top: 500px;}
+    100%{opacity: 1; margin-top: 8px;}
+    
+}
+
+   .product-container img{
+    max-width: 100%; 
+    position: relative;
+    top: 36px;
+}
+
+.cat-text{
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: white;
+    margin-top: 10%;
+    margin-bottom: -2%;
+}
+
+.btn-container{
+    position: relative;
+    background-color: white;
+    padding: 7%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    top: 1;
+}
+
+.view-more-btn{
+    position: relative;
+    background-color: #4caf50;
+    border: none;
+    max-width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 7px 12px;
+    margin: 9px 18px;
+    color: white;
+    display: inline-block;
+}
+
+.view-more-btn:hover{
+    background-color: darkorange;
+}
+
+#social-media-container{
+    position: fixed;
+    right: 0;
+    display: inline-block;
+    background-color: black;
+    bottom: 60%;
+}
+
+#social-media-container:hover{
+    cursor: pointer;
+}
+
+#facebook-icon-container{
+    background-color: #395598;
+    transition: 0.5s;
+}
+#facebook-icon-container:hover{
+    padding-left: 20%;
+}
+
+#instagram-icon-container{
+    background-color: #f04063;
+    transition: 0.5s;
+}
+#instagram-icon-container:hover{
+    padding-left: 20%;
+}
+
+#twitter-icon-container{
+    background-color: #1cb7eb;
+    transition: 0.5s;
+}
+#twitter-icon-container:hover{
+    padding-left: 20%;
+}
